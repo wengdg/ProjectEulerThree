@@ -8,7 +8,11 @@ public class ProjectEulerThree {
    */
   public static void main(String[] args) {
 
-    long targetNum = 600851475143L;
+    largePrimeFact(100);
+  }
+
+  public static long largePrimeFact(long targetNum) {
+
     long divider = 2;
     long lastPF = 0;
 
@@ -23,6 +27,6 @@ public class ProjectEulerThree {
       divider++;
     }
 
-    System.out.printf("\nLargest Prime Factor is %d", lastPF);
+    return lastPF;
   }
 }
